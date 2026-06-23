@@ -1,40 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tashan Win Login</title>
+
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
 body{
-font-family:Arial;
-background:#0f172a;
-text-align:center;
-padding-top:100px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:400px;
+    text-align:center;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
 }
 
 .logo{
-color:white;
-font-size:35px;
-font-weight:bold;
-margin-bottom:40px;
+    font-size:32px;
+    color:#f59e0b;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    margin-bottom:30px;
 }
 
 .btn{
-display:inline-block;
-padding:15px 40px;
-margin:10px;
-background:#f59e0b;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-size:18px;
+    display:block;
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.login-btn{
+    background:#22c55e;
+}
+
+.register-btn{
+    background:#f59e0b;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.footer{
+    color:#94a3b8;
+    margin-top:25px;
+    font-size:14px;
 }
 </style>
 </head>
 <body>
 
-<div class="logo">Tashan Win</div>
+<div class="container">
 
-<a href="login.html" class="btn">Login</a>
-<a href="register.html" class="btn">Register</a>
+    <div class="logo">Tashan Win Login</div>
+
+    <div class="subtitle">
+        Welcome To Tashan Win Official Portal
+    </div>
+
+    <a class="btn login-btn"
+       href="http://www.tashanwin.co/#/register?invitationCode=388211435626">
+       Login
+    </a>
+
+    <a class="btn register-btn"
+       href="http://www.tashanwin.co/#/register?invitationCode=388211435626">
+       Register
+    </a>
+
+    <div class="footer">
+        Secure Access • Fast Registration
+    </div>
+
+</div>
 
 </body>
 </html>
